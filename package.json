@@ -2,19 +2,28 @@
 	"name": "DreamHome.Notification",
 	"version": "1.0.0",
 	"description": "DreamHome Notification Service",
-        "license": "ISC",
-
-	"dependencies":
-        {
-	  "express": "*",
-          "restler":"*",
-          "body-parser":"*",
-          "request":"*",
-          "mongodb":"*"
+	"license": "ISC",
+	"devDependencies": {
+		"grunt": "~1.0.1",
+		"grunt-contrib-jshint": "~1.1.0",
+		"grunt-contrib-nodeunit": "~1.0.0",
+		"grunt-contrib-uglify": "~2.0.0"
 	},
 
-	"engines": { "node": "0.10.*" },
+	"dependencies": {
+		"express": "*",
+		"restler": "*",
+		"body-parser": "*",
+		"request": "*",
+		"mongodb": "*"
+	},
+
+	"engines": {
+		"node": "6.0.*"
+	},
 	"repository": {},
 
-        "scripts": { "start": "node notification.js" }
+	"scripts": {
+		"start": "node notification.js"
+	}
 }
